@@ -1,0 +1,101 @@
+<link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+    #mensaje {
+        display: none;
+    }
+</style>
+<center><video src="intro.mp4" style="height: 350px;" controls autoplay loop></video></center>
+<font color="#FF0042"><h1><center><em><i>LA CASA DE PAPEL</i></em></center></h1></style></font>
+<center><img src="segunda.gif" style="height:250px;"></center>
+<font color="#FFFFFF"><h2><center>PUBLICADA EL 2 DE MAYO DEL 2017 </center></h2></font>
+<center><video src="trailer.mp4" style="height: 350px;" controls autoplay loop></video></center>
+<font color="#FFFFFF"><h3><center>CREADA POR ÁLEX PINA</center></h3></font>
+<center><img src="creador.jpeg" style="height: 200px; "></center>
+<font color="#FFFFFF"><h3><center>PRODUCIDA POR ATRESMEDIA</center></h3></font>
+<center><img src="atresmedia.png" style="height: 100px;"></center>
+<font color="#FFFFFF"><h2><center>Una banda organizada de ladrones se propone cometer el atraco del siglo en la Fábrica Nacional de Moneda y Timbre. Cinco meses de preparación quedarán reducidos a once días para poder llevar a cabo con éxito el gran golpe. Sergio Marquina, alias El Profesor, ha planeado de forma minuciosa desde su infancia el atraco de la Fábrica Nacional de la Moneda y Timbre. Con la ayuda de un grupo de ocho delincuentes, de nombre ficticio y el rostro enmascarado, pretende ocupar el edificio durante 11 días, a fin de fabricar 2.400 millones de euros.</center></h2></font>
+<div>
+  <center><img id="imagen" src="denver.gif" alt="spam" height="300px"></center>
+  <br>
+  <center><button onclick="cambiarAtributo()">Cambiar imagen</button></center>
+  <br>
+  <center><button onclick="cambiarAtributoAntiguo()">Imagen anterior</button></center>
+</div>
+<script>
+  function cambiarAtributo() {
+      document.getElementById("imagen").src = "juntos.gif";
+  }
+  function cambiarAtributoAntiguo() {
+      document.getElementById("imagen").src = "denver.gif";
+  }
+</script>
+
+<font color="#FFFFFF"><h3><center>AL 95% DE LOS USUARIOS QUE VIERON ESTA PELICULA LES GUSTO</center></h3></style></font>
+<center><img src="estrellas.avif" style="height: 100px;"></center>
+<font color="#FFFFFF"><H2><center>La casa de papel es una serie de televisión española creada por Álex Pina, producida por Atresmedia en sus inicios, aunque posteriormente por Netflix y con el periodista y guionista Javier Gómez Santander como coproductor ejecutivo. Protagonizada por Úrsula Corberó, Itziar Ituño y Álvaro Morte, se presentó en el III Festival de Televisión de Primavera en Burgos en marzo de 2017​ y el 2 de mayo de ese mismo año se estrenó en la cadena española Antena. Esta cadena distribuyó las dos primeras partes de la serie en España antes de que Netflix la adquiriera a finales de 2017 y la editase, reeditase y distribuyese las dos partes por todo el mundo. La serie está inspirada en el protocolo del atracador de bancos Willie Sutton,​ que concibió más de 100 golpes mediante disfraces y engaños y sin necesidad de disparar a nadie. Eso le reportó dos millones de dólares en las décadas de 1920-1950. 
+  <center><img src="todos.gif" style="height: 300px;"> </center>
+  La serie cuenta con 41 episodios repartidos en 5 temporadas; las dos primeras partes tratan sobre el atraco de la banda a la Fábrica Nacional de Moneda y Timbre, mientras que la tercera, cuarta y quinta parte es al Banco de España. Los creadores consiguen combinar acción, intriga, suspenso, e incluso romanticismo y, en la última temporada, un carácter bélico, con una gran caracterización de los personajes y un atrapante argumento. Todas estas cualidades la convierten en la serie española más exitosa de todos los tiempos. La casa de papel finalizó el 3 de diciembre de 2021, tras 3 temporadas y 5 partes emitidas.   <center><video src="bella.mp4" style="height: 300px;" controls autoplay loop></video></center>
+  Tras su final, Netflix anunció que ya trabaja en un spin-off sobre la vida de “Berlín”, interpretado por Pedro Alonso, para 2023 y en una nueva precuela llamada “El Golpe Del Siglo” para 2024.​</center></H2></font><br>
+
+  <font color="#FFFFFF"><h1><center>DESPUES DE ESTAS GRANDIOSAS 5 TEMPORADAS LLEGA:</center></h1></style></font>
+  <font color="#FFFFFF"><h2><center>DE LA CASA DE PAPEL</center></h2></style></font>
+  <center><video src="berlin.mp4" style="height: 450px;" controls autoplay loop></video></center>
+  <font color="#FFFFFF"><h1><center>BERLIN</center></h1></style></font>
+<body>
+  <center><button onclick="CambiarFondo()">Cambiar fondo</button></center>
+  
+</body>
+
+<head>
+  <style>
+    body {
+        background-image: url(fondo.jpg);
+    }
+</style>
+<script>
+    function CambiarFondo() {
+        var body = document.getElementsByTagName("body")[0];
+        body.style.backgroundImage = "url('fondo2.webp')";
+    }
+</script>
+
+
+<center>
+  <font color="#FFFFFF">
+      <p id="texto">¿Como termina?</p>
+  </font>
+</center>
+<center><button onclick="cambiarTexto()">Leer final</button></center>
+<script>
+  function cambiarTexto() {
+      var nuevoTexto = "“La casa de papel” termina con el Profesor, Lisboa, Rio, Denver, Estocolmo, Helsinki, Palermo, Marsella, Manila, Bogotá, Pamplona, Logroño y Alicia adoptando nuevas identidades para empezar una vida alejados de los atracos y de las persecuciones policiales.";
+      var parrafo = document.getElementById("texto");
+      parrafo.textContent = nuevoTexto;
+  }
+</script>
+<br>
+
+<div>
+  <center>
+      <font color="#FFFFFF">
+          <h2 id="mensaje">HOLA MUNDO</h2>
+      </font>
+  </center>
+  <center><button onclick="MensajeSecreto()">NO ABRIR</button></center>
+</div>
+<script>
+  function MensajeSecreto() {
+      document.getElementById("mensaje").style.display = "block";
+  }
+</script>
+<br>
+
+<div id="miDiv"></div>
+<center><button onclick="escribirTexto()">ESTE TAMPOCO LO HABRAS</button></center>
+<script>
+    function escribirTexto() {
+        var div = document.getElementById("miDiv");
+        div.innerHTML = "<center><font color=#FFFFFF><h1>Este texto no lo escribió Kevin, lo escribió JavaScript</h1></font></center>";
+    }
+</script>
+</head>

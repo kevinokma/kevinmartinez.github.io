@@ -98,4 +98,33 @@
         div.innerHTML = "<center><font color=#FFFFFF><h1>Este texto no lo escribió Kevin, lo escribió JavaScript</h1></font></center>";
     }
 </script>
+
+<br>
+<center><img src="imagen1.jpg" id="imagenCambiante" style="height:300px;"></center>
+
+<script>
+
+    var imagenes = ["imagen1.jpg", "imagen2.jpg", "imagen3.avif", "imagen4.jpg", "imagen5.jpg"];
+
+    var ImagenActual = 0;
+
+    function ImagenSiguiente() {
+        ImagenActual = (ImagenActual + 1) % imagenes.length;
+        CambiarImagen(ImagenActual);
+    }
+    function ImagenAnterior() {
+        ImagenActual = (ImagenActual - 1 + imagenes.length) % imagenes.length;
+        CambiarImagen(ImagenActual);
+    }
+    function CambiarImagen(Imagen) {
+        var imagen = document.getElementById("imagenCambiante");
+        imagen.src = imagenes[Imagen]
+    }
+
+</script>
+<br>
+<center><button onclick="ImagenSiguiente()">Siguiente</button></center>
+<br>
+<center><button onclick="ImagenAnterior()">Anterior</button></center>
+
 </head>
